@@ -2,7 +2,7 @@ from typing import cast
 
 import click
 from piplines.deployment_pipeline import (
-    continuous_deployment_pipeline,
+    customer_satisfaction_deployment_pipeline,
     inference_pipeline,
 )
 from rich import print
@@ -43,7 +43,7 @@ def main(config: str, min_accuracy: float):
 
     if deploy:
         # Initialize a continuous deployment pipeline run
-        continuous_deployment_pipeline(
+        customer_satisfaction_deployment_pipeline(
             min_accuracy=min_accuracy,
             workers=3,
             timeout=60,
@@ -52,7 +52,7 @@ def main(config: str, min_accuracy: float):
     if predict:
         # Initialize an inference pipeline run
         inference_pipeline(
-            pipeline_name="continuous_deployment_pipeline",
+            pipeline_name="customer_satisfaction_deployment_pipeline",
             pipeline_step_name="mlflow_model_deployer_step",
         )
 
@@ -67,7 +67,7 @@ def main(config: str, min_accuracy: float):
 
     # fetch existing services with same pipeline name, step name and model name
     existing_services = mlflow_model_deployer_component.find_model_server(
-        pipeline_name="continuous_deployment_pipeline",
+        pipeline_name="customer_satisfaction_deployment_pipeline",
         pipeline_step_name="mlflow_model_deployer_step",
         model_name="model",
     )
