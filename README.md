@@ -1,6 +1,6 @@
 # Customer Satisfaction Prediction Pipeline with ZenML
 
-A comprehensive MLOps pipeline for predicting customer satisfaction scores using ZenML, MLflow, and Streamlit. This project demonstrates end-to-end machine learning workflows from data ingestion to model deployment and web interface.
+A        comprehensive MLOps pipeline for predicting customer satisfaction scores using ZenML, MLflow, and Streamlit. This project demonstrates end-to-end machine learning workflows from data ingestion to model deployment and web interface.
 
 ## 📋 Table of Contents
 
@@ -11,10 +11,8 @@ A comprehensive MLOps pipeline for predicting customer satisfaction scores using
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Model Performance](#model-performance)
 - [Tutorial Reference](#tutorial-reference)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## 🎯 Overview
 
