@@ -11,10 +11,8 @@ A comprehensive MLOps pipeline for predicting customer satisfaction scores using
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Model Performance](#model-performance)
 - [Tutorial Reference](#tutorial-reference)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## 🎯 Overview
 
