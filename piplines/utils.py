@@ -11,7 +11,7 @@ def get_data_for_test():
         preprocess_strategy = DataPreProcessStrategy()
         data_cleaning = DataCleaning(df, preprocess_strategy)
         df = data_cleaning.handle_data()
-        df.drop(["review_score"], axis=1, inplace=True)
+        df = df.drop(["review_score"], axis=1)
         result = df.to_json(orient="split")
         return result
     except Exception as e:
